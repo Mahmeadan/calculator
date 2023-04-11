@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: #000;
+    border-radius: 20px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+    margin-right: 3px;
+  }
+  
+  .output input {
+    font-size: 2em;
+    margin: 3px;
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .opertation-button {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 150px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .opertation-button:hover {
+    background-color: #ccc;
+  }
+  
+  .number {
+    background-color: #3a2a2a;
+    color: #fff;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 150px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .number:hover {
+    background-color: #ccc;
+  }
+  
+  .orange {
+    background-color: #ff8c00;
+    color: #fff;
+  }
+  .light-gray{
+    background-color: rgb(231, 223, 223);
+    color:#fff ;
+  }
+  .light-gray:hover{
+    background-color: #ccc;
+  }
+  .span-two{
+    background-color:  #3a2a2a;
+    color: #fff;
+    grid-column: 1 / span 2;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .span-two:hover{
+    background-color: #ddd;
+  }
+  #percent{
+    background-color: lightgrey;
+    color: #fff;
+    border: none;
+    border-radius: 150px;
+    cursor: pointer;
+  }
+  
+  #dot {
+    font-size: 1.5em;
+    background-color: #3a2a2a;
+    color: #fff;
+    border: none;
+    border-radius: 150px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #dot:hover {
+    background-color: #ccc;
+  }
+  
+  #equal {
+    grid-column: 4 / -1;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 150px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  #equal:hover {
+    background-color: #ccc;
+  }
+  
